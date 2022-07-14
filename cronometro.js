@@ -12,10 +12,10 @@ var interval
 /* Função para os numeros do cronometro */
 function twodigits(digit){
     if(digit < 10){ /* Se o número da contagem do cronometro for menor que 10 */
-        return '0'+digit /* Coloque um '0' na antes do número */
+        return '0'+digit /* Coloque um '0' antes do número */
     }
     else{
-        return digit /* Dixe da forma que está */
+        return digit /* Deixe da forma que está */
     }
 }
 start.onclick = function(){
@@ -37,7 +37,7 @@ function contador(){
 }
 
 pause.onclick = function(){
-    clearInterval(interval) /* Pausa intervalo, mas não volta ao início */
+    clearInterval(interval) /* Pausa o intervalo, mas não volta ao início */
 }
 
 reset.onclick = function(){
